@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <labels x="18" y="11" width="106" height="21" border="true">
+            <text>Montreal</text>
+        </labels>
+        <labels x="773" y="599" width="106" height="37" border="true">
+            <text>Rive Sud
+</text>
+        </labels>
+        <place id="Controller 1">
+            <graphics>
+                <position x="315.0" y="315.0"/>
+            </graphics>
+            <name>
+                <value>Controller 1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Controller 2">
+            <graphics>
+                <position x="450.0" y="315.0"/>
+            </graphics>
+            <name>
+                <value>Controller 2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="File d'attente 1">
+            <graphics>
+                <position x="180.0" y="225.0"/>
+            </graphics>
+            <name>
+                <value>File d'attente 1</value>
+                <graphics>
+                    <offset x="1.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="File d'attente 2">
+            <graphics>
+                <position x="615.0" y="405.0"/>
+            </graphics>
+            <name>
+                <value>File d'attente 2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Sortie 1">
+            <graphics>
+                <position x="360.0" y="525.0"/>
+            </graphics>
+            <name>
+                <value>Sortie 1</value>
+                <graphics>
+                    <offset x="0.0" y="1.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Sortie 2">
+            <graphics>
+                <position x="420.0" y="105.0"/>
+            </graphics>
+            <name>
+                <value>Sortie 2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Voie 1">
+            <graphics>
+                <position x="180.0" y="405.0"/>
+            </graphics>
+            <name>
+                <value>Voie 1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Voie 2">
+            <graphics>
+                <position x="615.0" y="225.0"/>
+            </graphics>
+            <name>
+                <value>Voie 2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="Entree 1">
+            <graphics>
+                <position x="180.0" y="135.0"/>
+            </graphics>
+            <name>
+                <value>Entree 1</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Entree 2">
+            <graphics>
+                <position x="615.0" y="480.0"/>
+            </graphics>
+            <name>
+                <value>Entree 2</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Entree voie 1">
+            <graphics>
+                <position x="180.0" y="315.0"/>
+            </graphics>
+            <name>
+                <value>Entree voie 1</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Entree voie 2">
+            <graphics>
+                <position x="615.0" y="315.0"/>
+            </graphics>
+            <name>
+                <value>Entree voie 2</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Quitte systeme 1">
+            <graphics>
+                <position x="360.0" y="615.0"/>
+            </graphics>
+            <name>
+                <value>Quitte systeme 1</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>270</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Quitte systeme 2">
+            <graphics>
+                <position x="420.0" y="15.0"/>
+            </graphics>
+            <name>
+                <value>Quitte systeme 2</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Traffic Light 1">
+            <graphics>
+                <position x="360.0" y="435.0"/>
+            </graphics>
+            <name>
+                <value>Traffic Light 1</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Traffic Light 2">
+            <graphics>
+                <position x="420.0" y="180.0"/>
+            </graphics>
+            <name>
+                <value>Traffic Light 2</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="Controller 1 to Entree voie 1" source="Controller 1" target="Entree voie 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="312" y="327" curvePoint="false"/>
+            <arcpath id="001" x="206" y="327" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Controller 2 to Entree voie 2" source="Controller 2" target="Entree voie 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="477" y="327" curvePoint="false"/>
+            <arcpath id="001" x="611" y="327" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Entree 1 to File d'attente 1" source="Entree 1" target="File d'attente 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="191" y="151" curvePoint="false"/>
+            <arcpath id="001" x="191" y="222" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Entree 2 to File d'attente 2" source="Entree 2" target="File d'attente 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="626" y="486" curvePoint="false"/>
+            <arcpath id="001" x="626" y="431" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Entree voie 1 to Voie 1" source="Entree voie 1" target="Voie 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="191" y="331" curvePoint="false"/>
+            <arcpath id="001" x="191" y="402" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Entree voie 2 to Voie 2" source="Entree voie 2" target="Voie 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="626" y="321" curvePoint="false"/>
+            <arcpath id="001" x="626" y="251" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="File d'attente 1 to Entree voie 1" source="File d'attente 1" target="Entree voie 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="191" y="251" curvePoint="false"/>
+            <arcpath id="001" x="191" y="321" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="File d'attente 2 to Entree voie 2" source="File d'attente 2" target="Entree voie 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="626" y="402" curvePoint="false"/>
+            <arcpath id="001" x="626" y="331" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Sortie 1 to Quitte systeme 1" source="Sortie 1" target="Quitte systeme 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="372" y="551" curvePoint="false"/>
+            <arcpath id="001" x="372" y="622" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Sortie 2 to Quitte systeme 2" source="Sortie 2" target="Quitte systeme 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="431" y="102" curvePoint="false"/>
+            <arcpath id="001" x="431" y="31" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Traffic Light 1 to Controller 2" source="Traffic Light 1" target="Controller 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="371" y="441" curvePoint="false"/>
+            <arcpath id="001" x="452" y="338" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Traffic Light 1 to Sortie 1" source="Traffic Light 1" target="Sortie 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="371" y="451" curvePoint="false"/>
+            <arcpath id="001" x="371" y="522" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Traffic Light 2 to Controller 1" source="Traffic Light 2" target="Controller 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="431" y="196" curvePoint="false"/>
+            <arcpath id="001" x="336" y="315" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Traffic Light 2 to Sortie 2" source="Traffic Light 2" target="Sortie 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="431" y="186" curvePoint="false"/>
+            <arcpath id="001" x="431" y="131" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Voie 1 to Traffic Light 1" source="Voie 1" target="Traffic Light 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="206" y="419" curvePoint="false"/>
+            <arcpath id="001" x="356" y="447" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Voie 2 to Traffic Light 2" source="Voie 2" target="Traffic Light 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="612" y="233" curvePoint="false"/>
+            <arcpath id="001" x="446" y="192" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+    </net>
+</pnml>
